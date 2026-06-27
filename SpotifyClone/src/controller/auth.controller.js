@@ -56,7 +56,7 @@ async function loginUser(req,res){
         ]
     })
     if(!user){
-        res.status(401).json({
+        res.status(404).json({
             message:"User Not Found"
         })
     }
